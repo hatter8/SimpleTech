@@ -22,6 +22,7 @@ Genral Styling
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fs-h5: 1.12rem;
     --fs-body: 1rem;
     --fs-body-sm: .875rem;
 }
@@ -55,6 +56,7 @@ body{
         --fs-h1: 5rem;
         --fs-h2: 2rem;
         --fs-h3: 1.8rem;
+        --fs-h5: 1.4rem;
         --fs-h6: 1rem;
         --fs-body: 1.125rem; /*1.125rem*/
         --fs-body-sm: .925rem;
@@ -79,7 +81,8 @@ Typography
 /*Include all headings*/
 h1,
 h2,
-h3 {
+h3
+{
     line-height: 1.1;
     font-weight: 700;
     margin: 0;
@@ -94,12 +97,18 @@ h2 { font-size: var(--fs-h2);
 h3 {font-size: var(--fs-h3);
 }
 
+h5{
+    font-size: var(--fs-h5);
+    font-weight: 500;
+}
+
 h6 {
     font-size: var(--fs-h6);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.125em;
 }
+
 
 p{
     /* opacity: 0.64; */
@@ -164,6 +173,10 @@ p{
     font-size: 1.25rem;
     font-weight: normal;
     opacity: .74;
+}
+
+.modal-desc{
+    opacity: 0.64;
 }
 
 /*
@@ -455,6 +468,15 @@ h3::after{
     margin: 0 auto;
 }
 */
+.modal .modal-content{
+    padding: 2.75em;
+}
+.modal-img{
+    width:  100%;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: .8em;
+}
 
 /*
 ===================================
