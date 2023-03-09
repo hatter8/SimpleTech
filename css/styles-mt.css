@@ -21,8 +21,9 @@ Genral Styling
     /*Change*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: 1.8rem; /*1.25*/
     --fs-h5: 1.12rem;
+    --fs-h6: 1.2rem;
     --fs-body: 1rem;
     --fs-body-sm: .875rem;
 }
@@ -51,13 +52,14 @@ body{
 
 
 @media (min-width: 800px) {
+
     :root {
     	/*Change*/
         --fs-h1: 5rem;
         --fs-h2: 2rem;
         --fs-h3: 1.8rem;
         --fs-h5: 1.4rem;
-        --fs-h6: 1rem;
+        --fs-h6: 1.2rem;
         --fs-body: 1.125rem; /*1.125rem*/
         --fs-body-sm: .925rem;
     }
@@ -196,12 +198,16 @@ nav ul li.active {
 .hero-wrapper {
     width: 100%;
     max-width: 1600px;
-    /*height: 100vh;*/
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 4em auto;
+}
+
+@media (max-width: 700px) {
+    .hero-wrapper{
+        margin: 0;
+    }
 }
 
 .contact-details{
@@ -231,6 +237,16 @@ nav ul li.active {
 .about-desc{
     margin: 3em 0;
 }
+
+/* @media (min-width: 700px) {
+    .card-wrap{
+        padding: 0;
+    }
+    .about-desc{
+        margin: 1em 0;
+    }
+
+} */
 
 .services{
     width: 95%;
@@ -291,10 +307,6 @@ h3::after{
 .row .col{
     padding: 0 1em 1em 0;
 
-}
-
-.row .col:last-child{
-    padding: 0;
 }
 
 .no-padding{
@@ -383,9 +395,9 @@ h3::after{
 
 .testimonials {
     background-color: #2b312d;
-    background-image: -webkit-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../img4.jpg);
-    background-image: -o-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../img4.jpg);
-    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)), url(../img4.jpg);
+    background-image: -webkit-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/img4.jpg);
+    background-image: -o-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/img4.jpg);
+    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)), url(img/img4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -495,9 +507,9 @@ General Styling
 
 .header{
     background-color: #DCDCDC;
-    background-image: -webkit-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../shop-image.jpg);
-    background-image: -o-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../shop-image.jpg);
-    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../shop-image.jpg);
+    background-image: -webkit-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/shop-image.jpg);
+    background-image: -o-linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/shop-image.jpg);
+    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/shop-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -540,7 +552,7 @@ Form
 .booking{
     padding: 5em;
     background-color: #707070;
-    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(../img2.jpg);
+    background-image: linear-gradient(rgba(28, 29, 41, 0.64), rgba(28, 29, 41, 0.64)),url(img/img2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
