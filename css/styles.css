@@ -119,6 +119,7 @@ p{
 
 .cta {
     font-weight: 600;
+    margin: .5em 0;
 }
 
 .standard-desc,
@@ -190,6 +191,7 @@ nav ul li.active {
 .hero-wrapper {
     width: 100%;
     max-width: 1600px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,6 +247,7 @@ nav ul li.active {
 .standard-wrapper,
 .services-wrapper{
     width: 100%;
+    min-width: 400px;
     padding: 3em;
     border-radius: 2em;
     background-color: #fff;
